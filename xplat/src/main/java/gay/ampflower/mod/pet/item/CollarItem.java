@@ -1,6 +1,6 @@
 package gay.ampflower.mod.pet.item;
 
-import gay.ampflower.mod.pet.registry.PetworksDataComponentTypes;
+import gay.ampflower.mod.pet.component.type.GlowingComponent;
 import gay.ampflower.mod.pet.registry.tag.PetworksItemTags;
 import gay.ampflower.mod.pet.support.ServerSupport;
 import gay.ampflower.mod.pet.support.TrinketItem;
@@ -10,7 +10,6 @@ import gay.ampflower.mod.pet.util.Util;
 import net.minecraft.block.Block;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DyedColorComponent;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -37,7 +36,6 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -119,14 +117,12 @@ public class CollarItem extends VerticallyAttachableBlockItem implements Wearabl
 			return false;
 		}
 
-		if (otherStack.isOf(Items.GLOW_INK_SAC) && !stack.getOrDefault(PetworksDataComponentTypes.GLOWING, false)) {
-			setGlowing(stack, true, player);
+		if (otherStack.isOf(Items.GLOW_INK_SAC) && GlowingComponent.addGlowing(stack, player)) {
 			otherStack.decrementUnlessCreative(1, player);
 			return true;
 		}
 
-		if (otherStack.isOf(Items.INK_SAC) && stack.getOrDefault(PetworksDataComponentTypes.GLOWING, false)) {
-			setGlowing(stack, false, player);
+		if (otherStack.isOf(Items.INK_SAC) && GlowingComponent.subtractGlowing(stack, player)) {
 			otherStack.decrementUnlessCreative(1, player);
 			return true;
 		}
@@ -196,24 +192,6 @@ public class CollarItem extends VerticallyAttachableBlockItem implements Wearabl
 	@Override
 	public int maxWearCount() {
 		return 1;
-	}
-
-	public static void setGlowing(ItemStack stack, boolean glowing, @Nullable Entity entity) {
-		if (glowing) {
-			stack.set(PetworksDataComponentTypes.GLOWING, glowing);
-			if (entity != null) {
-				entity.playSound(SoundEvents.ITEM_GLOW_INK_SAC_USE, 0.8F, 1.F);
-			}
-		} else {
-			stack.remove(PetworksDataComponentTypes.GLOWING);
-			if (entity != null) {
-				entity.playSound(SoundEvents.ITEM_INK_SAC_USE, 0.8F, 1.F);
-			}
-		}
-	}
-
-	public static boolean isGlowing(ItemStack stack) {
-		return stack.getOrDefault(PetworksDataComponentTypes.GLOWING, false);
 	}
 
 	@Override

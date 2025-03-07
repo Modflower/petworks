@@ -9,8 +9,8 @@ import dev.emi.emi.api.stack.EmiIngredient;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.GeneratedSlotWidget;
 import dev.emi.emi.api.widget.SlotWidget;
+import gay.ampflower.mod.pet.component.type.GlowingComponent;
 import gay.ampflower.mod.pet.recipe.MaidCollarSmithingRecipe;
-import gay.ampflower.mod.pet.registry.PetworksDataComponentTypes;
 import gay.ampflower.mod.pet.registry.tag.PetworksItemTags;
 import gay.ampflower.mod.pet.util.Util;
 import net.minecraft.component.DataComponentTypes;
@@ -70,7 +70,7 @@ public class EmiExt implements EmiPlugin {
 			registerDyeableCollar(registry, entry));
 
 		final var collars = EmiIngredient.of(PetworksItemTags.COLLARS);
-		final var glowingCollars = mutate(collars.copy(), collar -> collar.getItemStack().set(PetworksDataComponentTypes.GLOWING, true));
+		final var glowingCollars = mutate(collars.copy(), collar -> GlowingComponent.addGlowing(collar.getItemStack(), null));
 
 		registry.addRecipe(EmiWorldInteractionRecipe.builder()
 			.id(Util.synthetic("world/collar/glow", Util.slashify(PetworksItemTags.COLLARS)))

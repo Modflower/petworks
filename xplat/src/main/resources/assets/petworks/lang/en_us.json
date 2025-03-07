@@ -22,6 +22,9 @@
 	"item.petworks.fox_guise": "Fox Guise",
 	"item.petworks.rabbit_guise": "Rabbit Guise",
 
+	"item.petworks.glowing.advanced": "Glowing (%d, %d)",
+	"item.petworks.glowing": "Glowing",
+
 	"trinkets.slot.chest.guise": "Caricature",
 	"trinkets.slot.chest.collar": "Collar",
 

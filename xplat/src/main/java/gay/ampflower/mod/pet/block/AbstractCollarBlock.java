@@ -1,7 +1,7 @@
 package gay.ampflower.mod.pet.block;
 
 import gay.ampflower.mod.pet.block.entity.CollarBlockEntity;
-import gay.ampflower.mod.pet.item.CollarItem;
+import gay.ampflower.mod.pet.component.type.GlowingComponent;
 import gay.ampflower.mod.pet.item.CollarMaterial;
 import gay.ampflower.mod.pet.util.ItemUtils;
 import gay.ampflower.mod.pet.util.VoxelEmitter;
@@ -122,16 +122,14 @@ public abstract class AbstractCollarBlock extends BlockWithEntity {
 		if (player.canModifyBlocks() && world.getBlockEntity(pos) instanceof CollarBlockEntity collar) {
 			final var collarStack = collar.getStack();
 
-			if (stack.isOf(Items.GLOW_INK_SAC) && !CollarItem.isGlowing(collarStack)) {
-				CollarItem.setGlowing(collarStack, true, null);
+			if (stack.isOf(Items.GLOW_INK_SAC) && GlowingComponent.addGlowing(collarStack, null)) {
 				collar.markDirty();
 				world.playSound(null, collar.getPos(), SoundEvents.ITEM_GLOW_INK_SAC_USE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				stack.decrementUnlessCreative(1, player);
 				return ItemActionResult.SUCCESS;
 			}
 
-			if (stack.isOf(Items.INK_SAC) && CollarItem.isGlowing(collarStack)) {
-				CollarItem.setGlowing(collarStack, false, null);
+			if (stack.isOf(Items.INK_SAC) && GlowingComponent.subtractGlowing(collarStack, null)) {
 				collar.markDirty();
 				world.playSound(null, collar.getPos(), SoundEvents.ITEM_INK_SAC_USE, SoundCategory.BLOCKS, 1.0F, 1.0F);
 				stack.decrementUnlessCreative(1, player);

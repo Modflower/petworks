@@ -36,5 +36,6 @@ public class MixinItemStack {
 		final Consumer<Text> consumer = list::add;
 
 		appendTooltip(PetworksDataComponentTypes.DYED_COLOURS, context, consumer, type);
+		appendTooltip(PetworksDataComponentTypes.GLOWING, context, consumer, type);
 	}
 }

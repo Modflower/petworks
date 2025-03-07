@@ -60,7 +60,7 @@ public record DyedColoursComponent(IntList rgbs, boolean showInTooltips) impleme
 
 	@Override
 	public void appendTooltip(final Item.TooltipContext context, final Consumer<Text> tooltip, final TooltipType type) {
-		if (!this.showInTooltips) {
+		if (!this.showInTooltips || this.rgbs.isEmpty()) {
 			return;
 		}
 

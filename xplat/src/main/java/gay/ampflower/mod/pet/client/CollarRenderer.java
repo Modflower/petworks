@@ -1,7 +1,8 @@
 package gay.ampflower.mod.pet.client;
 
-import gay.ampflower.mod.pet.item.CollarItem;
+import gay.ampflower.mod.pet.component.type.GlowingComponent;
 import gay.ampflower.mod.pet.mixin.client.AccessorAnimalModel;
+import gay.ampflower.mod.pet.registry.PetworksDataComponentTypes;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.OverlayTexture;
 import net.minecraft.client.render.VertexConsumerProvider;
@@ -232,10 +233,12 @@ public class CollarRenderer {
 
 	private int light(final LivingEntity entity, final ItemStack stack, final int light) {
 		// TODO: Apply this to items as well; for now this will do.
-		if (CollarItem.isGlowing(stack)) {
-			final int block = Math.max(light & 0xFFFF, entity.getEntityWorld().getAmbientDarkness() << 3);
-			return (light & ~0xFFFF) | MathHelper.lerp(0.50F, block, 0xFF);
-		}
-		return light;
+		final var glowing = stack.getOrDefault(PetworksDataComponentTypes.GLOWING, GlowingComponent.DEFAULT);
+
+		final int block = light & 0xFFFF;
+		final int sky = (light >>> 16) & 0xFFFF;
+
+		return MathHelper.lerp(glowing.block() / 15F, block, 0xFF) |
+			(MathHelper.lerp(glowing.sky() / 15F, sky, 0xFF) << 16);
 	}
 }
