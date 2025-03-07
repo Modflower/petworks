@@ -1,0 +1,7 @@
+{
+	"parent": "emi:item/half_item",
+	"textures": {
+		"first": "petworks:item/amethyst_collar",
+		"second": "petworks:item/quartz_collar"
+	}
+}

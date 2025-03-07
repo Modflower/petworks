@@ -1,0 +1,13 @@
+# Ignore IDE configurations
+.idea/
+
+# Ignore build & test files
+build/
+out/
+run/
+.gradle/
+generated/
+
+# Ignore random junk
+*.hprof
+*.log

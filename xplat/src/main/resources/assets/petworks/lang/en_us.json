@@ -1,0 +1,55 @@
+{
+	"block.petworks.maid_collar": "Maid Collar",
+	"block.petworks.cloth_collar": "Cloth Collar",
+	"block.petworks.hide_collar": "Hide Collar",
+	"block.petworks.leather_collar": "Leather Collar",
+	"block.petworks.chain_collar": "Chain Collar",
+	"block.petworks.iron_collar": "Iron Collar",
+	"block.petworks.gold_collar": "Gold Collar",
+	"block.petworks.copper_collar": "Copper Collar",
+	"block.petworks.quartz_collar": "Quartz Collar",
+	"block.petworks.amethyst_collar": "Amethyst Collar",
+	"block.petworks.emerald_collar": "Emerald Collar",
+	"block.petworks.diamond_collar": "Diamond Collar",
+	"block.petworks.netherite_collar": "Netherite Collar",
+	"block.petworks.obsidian_collar": "Obsidian Collar",
+	"block.petworks.bedrock_collar": "Bedrock Collar",
+
+	"item.petworks.wolf_guise": "Wolf Guise",
+	"item.petworks.tamed_cat_guise": "Tamed Cat Guise",
+	"item.petworks.stray_cat_guise": "Stray Cat Guise",
+	"item.petworks.ocelot_guise": "Ocelot Guise",
+	"item.petworks.fox_guise": "Fox Guise",
+	"item.petworks.rabbit_guise": "Rabbit Guise",
+
+	"trinkets.slot.chest.guise": "Caricature",
+	"trinkets.slot.chest.collar": "Collar",
+
+	"trinkets.slot.hand.bracelet": "Bracelet",
+	"trinkets.slot.offhand.bracelet": "Bracelet",
+
+	"curios.identifier.guise": "Caricature",
+	"curios.identifier.collar": "Collar",
+
+	"petworks.owner": "Owned by %s",
+
+	"tag.item.petworks.armor_collars": "Armored Collars",
+	"tag.item.petworks.dyeable_collars": "Dyeable Collars",
+	"tag.item.petworks.shearable_collars": "Shearable Collars",
+	"tag.item.petworks.bracelets": "Bracelets",
+	"tag.item.petworks.collars": "Collars",
+	"tag.item.petworks.guises": "Guises",
+
+	"tag.item.petworks.enchantable.collar": "Enchantable Collars",
+	"tag.item.petworks.enchantable.wearable": "Enchantable Wearables",
+
+	"tag.item.trinkets.chest.collar": "Equippable in Collar Slot",
+	"tag.item.trinkets.chest.guise": "Equippable in Guise Slot",
+	"tag.item.trinkets.hand.bracelet": "Equippable in Bracelet Slot",
+	"tag.item.trinkets.offhand.bracelet": "Equippable in Bracelet Slot",
+
+	"tag.item.curios.collar": "Equippable in Collar Slot",
+	"tag.item.curios.guise": "Equippable in Guise Slot",
+	"tag.item.curios.bracelet": "Equippable in Bracelet Slot"
+}
+

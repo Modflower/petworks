@@ -1,0 +1,8 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "petworks:item/guise",
+		"layer1": "petworks:item/guise_lashes",
+		"layer2": "petworks:item/guise_iris"
+	}
+}

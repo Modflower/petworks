@@ -1,0 +1,17 @@
+{
+	"schemaVersion": 1,
+	"id": "petworks",
+	"name": "Petworks",
+	"version": "0.0.0",
+	"entrypoints": {
+		"main": [
+			"gay.ampflower.mod.pet.util.Pivot::init"
+		],
+		"fabric-datagen": [
+			"gay.ampflower.mod.pet.data.Main"
+		]
+	},
+	"mixins": [
+		"petworks-data.mixin.json"
+	]
+}

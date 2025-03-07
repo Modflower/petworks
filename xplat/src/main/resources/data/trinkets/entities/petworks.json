@@ -1,0 +1,30 @@
+{
+	"entities": [
+		"player",
+		"armor_stand",
+		"zombie",
+		"drowned",
+		"skeleton",
+		"stray",
+		"wither_skeleton",
+		"enderman",
+		"giant",
+		"piglin",
+		"piglin_brute",
+		"zombified_piglin",
+		"villager",
+		"zombie_villager",
+		"wandering_trader",
+		"evoker",
+		"pillager",
+		"vindicator",
+		"witch",
+		"blaze"
+	],
+	"slots": [
+		"chest/guise",
+		"chest/collar",
+		"hand/bracelet",
+		"offhand/bracelet"
+	]
+}

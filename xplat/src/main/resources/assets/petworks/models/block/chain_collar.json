@@ -1,0 +1,191 @@
+{
+	"render_type": "minecraft:cutout_mipped",
+	"textures": {
+		"particle": "petworks:block/chain_collar",
+		"chain_collar": "petworks:block/chain_collar"
+	},
+	"elements": [
+		{
+			"name": "1",
+			"from": [8, -0.8, 4.75],
+			"to": [8, 0.7, 5.75],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, -0.05, 5.25]},
+			"faces": {
+				"east": {"uv": [3, 12, 0, 16], "texture": "#chain_collar", "tintindex": 0},
+				"west": {"uv": [0, 12, 3, 16], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "2",
+			"from": [8, -1.6, 4.75],
+			"to": [8, -0.4, 5.75],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, -0.9, 5.25]},
+			"faces": {
+				"east": {"uv": [3, 12, 6, 15], "texture": "#chain_collar", "tintindex": 0},
+				"west": {"uv": [3, 12, 6, 15], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "north",
+			"from": [5, 0.5, 5],
+			"to": [11, 0.5, 6],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 0.5, 5.5], "rescale": true},
+			"faces": {
+				"up": {"uv": [16, 3, 0, 0], "texture": "#chain_collar", "tintindex": 0},
+				"down": {"uv": [16, 0, 0, 3], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "never",
+			"from": [5, 0, 5.5],
+			"to": [11, 1, 5.5],
+			"rotation": {"angle": -45, "axis": "x", "origin": [8, 0.5, 5.5], "rescale": true},
+			"faces": {
+				"north": {"uv": [0, 6, 16, 9], "texture": "#chain_collar", "tintindex": 0},
+				"south": {"uv": [16, 6, 0, 9], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "eat",
+			"from": [10.5, 0, 5],
+			"to": [10.5, 1, 11],
+			"rotation": {"angle": -45, "axis": "z", "origin": [10.5, 0.5, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [16, 9, 0, 12], "texture": "#chain_collar", "tintindex": 0},
+				"west": {"uv": [0, 9, 16, 12], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "east",
+			"from": [10, 0.5, 5],
+			"to": [11, 0.5, 11],
+			"rotation": {"angle": -45, "axis": "z", "origin": [10.5, 0.5, 8], "rescale": true},
+			"faces": {
+				"up": {"uv": [16, 6, 0, 3], "rotation": 90, "texture": "#chain_collar", "tintindex": 0},
+				"down": {"uv": [0, 6, 16, 3], "rotation": 90, "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "shread",
+			"from": [5, 0, 10.5],
+			"to": [11, 1, 10.5],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 0.5, 10.5], "rescale": true},
+			"faces": {
+				"north": {"uv": [16, 6, 0, 9], "texture": "#chain_collar", "tintindex": 0},
+				"south": {"uv": [0, 6, 16, 9], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "south",
+			"from": [5, 0.5, 10],
+			"to": [11, 0.5, 11],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 0.5, 10.5], "rescale": true},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 3], "texture": "#chain_collar", "tintindex": 0},
+				"down": {"uv": [0, 3, 16, 0], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "wheat",
+			"from": [5.5, 0, 5],
+			"to": [5.5, 1, 11],
+			"rotation": {"angle": 45, "axis": "z", "origin": [5.5, 0.5, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [0, 9, 16, 12], "texture": "#chain_collar", "tintindex": 0},
+				"west": {"uv": [16, 9, 0, 12], "texture": "#chain_collar", "tintindex": 0}
+			}
+		},
+		{
+			"name": "west",
+			"from": [5, 0.5, 5],
+			"to": [6, 0.5, 11],
+			"rotation": {"angle": 45, "axis": "z", "origin": [5.5, 0.5, 8], "rescale": true},
+			"faces": {
+				"up": {"uv": [16, 3, 0, 6], "rotation": 90, "texture": "#chain_collar", "tintindex": 0},
+				"down": {"uv": [0, 3, 16, 6], "rotation": 90, "texture": "#chain_collar", "tintindex": 0}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2, 7.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2, 7.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 112.5, 0],
+			"translation": [0, 11, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 112.5, 0],
+			"translation": [0, 11, 0]
+		},
+		"ground": {
+			"translation": [0, 6, 0]
+		},
+		"gui": {
+			"rotation": [25, -135, 0],
+			"translation": [0, 10, 0],
+			"scale": [1.75, 1.75, 1.75]
+		},
+		"head": {
+			"translation": [0, 3.25, 0],
+			"scale": [1.4, 1.4, 1.4]
+		},
+		"fixed": {
+			"rotation": [90, 0, 0],
+			"translation": [0, 0, 14],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "misc",
+			"origin": [8, 0, 8],
+			"color": 0,
+			"children": [0]
+		},
+		{
+			"name": "chain collar",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [
+				{
+					"name": "leash point",
+					"origin": [8, -0.9, 5.25],
+					"color": 0,
+					"children": [1, 2]
+				},
+				{
+					"name": "nouth",
+					"origin": [8, 0.5, 5.5],
+					"color": 0,
+					"children": [3, 4]
+				},
+				{
+					"name": "eest",
+					"origin": [10.5, 0.5, 8],
+					"color": 0,
+					"children": [5, 6]
+				},
+				{
+					"name": "sorth",
+					"origin": [8, 0.5, 10.5],
+					"color": 0,
+					"children": [7, 8]
+				},
+				{
+					"name": "wast",
+					"origin": [5.5, 0.5, 8],
+					"color": 0,
+					"children": [9, 10]
+				}
+			]
+		}
+	]
+}

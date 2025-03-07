@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "gay.ampflower.mod.pet.mixin",
+	"refmap": "petworks.refmap.json",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": ["MixinEquipment", "MixinItemStack", "MixinPlayerEntity"],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"conformVisibility": true
+	},
+	"client": [
+		"client.AccessorAnimalModel", "client.MixinHeadFeatureRenderer"
+	]
+}

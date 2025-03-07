@@ -1,0 +1,51 @@
+{
+	"schemaVersion": 1,
+	"id": "petworks",
+	"version": "${version}",
+	"name": "Petworks",
+	"description": "${description}",
+	"authors": [
+		"Ampflower"
+	],
+	"contact": {
+		"homepage": "https://mod.ampflower.gay/Petworks",
+		"sources": "${sources}",
+		"issues": "${issues}",
+		"discord": "https://discord.gg/EmPS9y9"
+	},
+	"license": "Apache-2.0",
+	"icon": {
+		"128": "assets/petworks/pack-128x.png",
+		"256": "assets/petworks/pack-256x.png",
+		"512": "assets/petworks/pack-512x.png",
+		"1024": "assets/petworks/pack-1024x.png"
+	},
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gay.ampflower.mod.pet.fabric.Main"
+		],
+		"client": [
+			"gay.ampflower.mod.pet.fabric.ClientMain"
+		],
+		"emi": [
+			"gay.ampflower.mod.pet.emi.EmiExt"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "${minecraftRequired}",
+		"trinkets": "*"
+	},
+	"mixins": [
+		"petworks-xplat.mixin.json",
+		"petworks-fabric.mixin.json"
+	],
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/EmPS9y9"
+			}
+		}
+	}
+}

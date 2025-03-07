@@ -1,0 +1,18 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "gay.ampflower.mod.pet.fabric.mixin",
+	"refmap": "petworks.refmap.json",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"conformVisibility": true
+	},
+	"client": [
+		"client.MixinItemRenderer", "client.MixinModelLoader"
+	]
+}
