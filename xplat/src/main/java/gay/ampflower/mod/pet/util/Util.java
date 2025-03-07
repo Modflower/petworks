@@ -1,14 +1,18 @@
 package gay.ampflower.mod.pet.util;
 
 import com.mojang.datafixers.util.Either;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Position;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -197,5 +201,12 @@ public final class Util {
 			}
 		}
 		return false;
+	}
+
+	public static boolean isAdventure(final PlayerEntity player, final Position pos) {
+		if (player instanceof ServerPlayerEntity serverPlayer) {
+			return serverPlayer.isBlockBreakingRestricted(serverPlayer.getServerWorld(), BlockPos.ofFloored(pos), serverPlayer.interactionManager.getGameMode());
+		}
+		return true;
 	}
 }

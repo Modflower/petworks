@@ -6,6 +6,7 @@ import gay.ampflower.mod.pet.support.ServerSupport;
 import gay.ampflower.mod.pet.support.TrinketItem;
 import gay.ampflower.mod.pet.support.Trinkets;
 import gay.ampflower.mod.pet.util.ItemUtils;
+import gay.ampflower.mod.pet.util.Util;
 import net.minecraft.block.Block;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DyedColorComponent;
@@ -82,7 +83,7 @@ public class CollarItem extends VerticallyAttachableBlockItem implements Wearabl
 				return ActionResult.SUCCESS;
 			}
 			return ActionResult.FAIL;
-		} else if (Trinkets.INSTANCE.equip(entity, stack)) {
+		} else if (!Util.isAdventure(user, entity.getPos()) && Trinkets.INSTANCE.equip(entity, stack)) {
 			return ActionResult.SUCCESS;
 		}
 		return super.useOnEntity(stack, user, entity, hand);
