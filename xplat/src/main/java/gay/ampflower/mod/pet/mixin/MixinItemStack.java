@@ -1,5 +1,6 @@
 package gay.ampflower.mod.pet.mixin;
 
+import gay.ampflower.mod.pet.registry.PetworksDataComponentTypes;
 import net.minecraft.component.ComponentType;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -34,6 +35,6 @@ public class MixinItemStack {
 	private void onGetTooltip(Item.TooltipContext context, @Nullable PlayerEntity player, TooltipType type, CallbackInfoReturnable<List<Text>> callback, List<Text> list) {
 		final Consumer<Text> consumer = list::add;
 
-		//appendTooltip(PetworksDataComponentTypes.DYED_COLOURS, context, consumer, type);
+		appendTooltip(PetworksDataComponentTypes.DYED_COLOURS, context, consumer, type);
 	}
 }
