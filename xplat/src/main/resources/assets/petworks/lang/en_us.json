@@ -36,6 +36,9 @@
 	"item.petworks.glowing.advanced": "Glowing (%d, %d)",
 	"item.petworks.glowing": "Glowing",
 
+	"itemGroup.petworks.guises": "Caricatures",
+	"itemGroup.petworks.collars": "Collars",
+
 	"trinkets.slot.chest.guise": "Caricature",
 	"trinkets.slot.chest.collar": "Collar",
 

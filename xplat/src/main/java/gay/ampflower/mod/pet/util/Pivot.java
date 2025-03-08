@@ -60,6 +60,8 @@ public interface Pivot {
 
 	<V, T extends V> T register(RegistryKey<Registry<V>> key, String id, T t);
 
+	ItemGroup.Builder createItemGroupBuilder();
+
 	static <A> void registerCollars(BiConsumer<Item, A> collarConsumer, A cosmetic, A armor, A gimick) {
 		collarConsumer.accept(MAID_COLLAR, cosmetic);
 		collarConsumer.accept(COLLAR, cosmetic);
@@ -90,6 +92,45 @@ public interface Pivot {
 		collarConsumer.accept(BEDROCK_COLLAR, gimick);
 	}
 
+	static void registerCollars(Consumer<ItemConvertible> collarConsumer) {
+		collarConsumer.accept(MAID_COLLAR);
+		collarConsumer.accept(COLLAR);
+		collarConsumer.accept(MISSING_COLLAR);
+		collarConsumer.accept(PRIDE_COLLAR);
+		collarConsumer.accept(TRANS_COLLAR);
+		collarConsumer.accept(LESBIAN_COLLAR);
+		collarConsumer.accept(GAY_COLLAR);
+		collarConsumer.accept(GENDERQUEER_COLLAR);
+		collarConsumer.accept(GENDERFLUID_COLLAR);
+		collarConsumer.accept(AGENDER_COLLAR);
+		collarConsumer.accept(ARO_COLLAR);
+		collarConsumer.accept(ACE_COLLAR);
+		collarConsumer.accept(AROACE_COLLAR);
+		collarConsumer.accept(CLOTH_COLLAR);
+		collarConsumer.accept(HIDE_COLLAR);
+		collarConsumer.accept(LEATHER_COLLAR);
+		collarConsumer.accept(CHAIN_COLLAR);
+		collarConsumer.accept(IRON_COLLAR);
+		collarConsumer.accept(GOLD_COLLAR);
+		collarConsumer.accept(COPPER_COLLAR);
+		collarConsumer.accept(QUARTZ_COLLAR);
+		collarConsumer.accept(AMETHYST_COLLAR);
+		collarConsumer.accept(EMERALD_COLLAR);
+		collarConsumer.accept(DIAMOND_COLLAR);
+		collarConsumer.accept(NETHERITE_COLLAR);
+		collarConsumer.accept(OBSIDIAN_COLLAR);
+		collarConsumer.accept(BEDROCK_COLLAR);
+	}
+
+	static void registerGuises(Consumer<ItemConvertible> guiseConsumer) {
+		guiseConsumer.accept(WOLF_GUISE);
+		guiseConsumer.accept(TAMED_CAT_GUISE);
+		guiseConsumer.accept(STRAY_CAT_GUISE);
+		guiseConsumer.accept(OCELOT_GUISE);
+		guiseConsumer.accept(FOX_GUISE);
+		guiseConsumer.accept(RABBIT_GUISE);
+	}
+
 	static void init() {
 		PetworksBlocks.init();
 		PetworksBlockTypes.init();
@@ -97,5 +138,6 @@ public interface Pivot {
 		PetworksDataComponentTypes.init();
 		PetworksItems.init();
 		PetworksRecipeSerializers.init();
+		PetworksItemGroups.init();
 	}
 }
