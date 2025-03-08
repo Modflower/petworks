@@ -16,10 +16,16 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.AMETHYST_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.AROACE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.ARO_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.BEDROCK_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.BIGENDER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CHAIN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CLOTH_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.COPPER_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIBOY_1_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIBOY_2_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGENDER_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGIRL_1_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGIRL_2_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.DIAMOND_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.EMERALD_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.FOX_GUISE;
@@ -28,6 +34,8 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.GENDERFLUID_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.GENDERQUEER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.GOLD_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.HIDE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.INTERSEX_1_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.INTERSEX_2_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.IRON_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.LEATHER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.LESBIAN_COLLAR;
@@ -99,6 +107,14 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			GENDERQUEER_COLLAR,
 			GENDERFLUID_COLLAR,
 			AGENDER_COLLAR,
+			BIGENDER_COLLAR,
+			DEMIBOY_1_COLLAR,
+			DEMIBOY_2_COLLAR,
+			DEMIGENDER_COLLAR,
+			DEMIGIRL_1_COLLAR,
+			DEMIGIRL_2_COLLAR,
+			INTERSEX_1_COLLAR,
+			INTERSEX_2_COLLAR,
 			ARO_COLLAR,
 			ACE_COLLAR,
 			AROACE_COLLAR,
@@ -122,6 +138,14 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			GENDERQUEER_COLLAR,
 			GENDERFLUID_COLLAR,
 			AGENDER_COLLAR,
+			BIGENDER_COLLAR,
+			DEMIBOY_1_COLLAR,
+			DEMIBOY_2_COLLAR,
+			DEMIGENDER_COLLAR,
+			DEMIGIRL_1_COLLAR,
+			DEMIGIRL_2_COLLAR,
+			INTERSEX_1_COLLAR,
+			INTERSEX_2_COLLAR,
 			ARO_COLLAR,
 			ACE_COLLAR,
 			AROACE_COLLAR

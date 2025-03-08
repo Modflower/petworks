@@ -44,6 +44,30 @@ public final class PetworksBlocks {
 	AGENDER_COLLAR = register("agender_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		AGENDER_COLLAR_WALL = register("agender_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	BIGENDER_COLLAR = register("bigender_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		BIGENDER_COLLAR_WALL = register("bigender_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMIBOY_1_COLLAR = register("demiboy_1_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIBOY_1_COLLAR_WALL = register("demiboy_1_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMIBOY_2_COLLAR = register("demiboy_2_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIBOY_2_COLLAR_WALL = register("demiboy_2_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMIGENDER_COLLAR = register("demigender_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIGENDER_COLLAR_WALL = register("demigender_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMIGIRL_1_COLLAR = register("demigirl_1_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIGIRL_1_COLLAR_WALL = register("demigirl_1_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMIGIRL_2_COLLAR = register("demigirl_2_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIGIRL_2_COLLAR_WALL = register("demigirl_2_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	INTERSEX_1_COLLAR = register("intersex_1_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		INTERSEX_1_COLLAR_WALL = register("intersex_1_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	INTERSEX_2_COLLAR = register("intersex_2_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		INTERSEX_2_COLLAR_WALL = register("intersex_2_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	ARO_COLLAR = register("aro_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		ARO_COLLAR_WALL = register("aro_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
