@@ -13,7 +13,7 @@
 		"issues": "${issues}",
 		"discord": "https://discord.gg/EmPS9y9"
 	},
-	"license": "Apache-2.0",
+	"license": "All Rights Reserved",
 	"icon": {
 		"128": "assets/petworks/pack-128x.png",
 		"256": "assets/petworks/pack-256x.png",
