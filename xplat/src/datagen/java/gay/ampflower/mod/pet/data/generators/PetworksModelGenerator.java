@@ -46,6 +46,18 @@ public class PetworksModelGenerator extends FabricModelProvider {
 	@Override
 	public void generateBlockStateModels(final BlockStateModelGenerator generator) {
 		collarBlock(generator, PetworksBlocks.MAID_COLLAR, PetworksBlocks.MAID_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.COLLAR, PetworksBlocks.COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.MISSING_COLLAR, PetworksBlocks.MISSING_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.PRIDE_COLLAR, PetworksBlocks.PRIDE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.TRANS_COLLAR, PetworksBlocks.TRANS_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.LESBIAN_COLLAR, PetworksBlocks.LESBIAN_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GAY_COLLAR, PetworksBlocks.GAY_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GENDERQUEER_COLLAR, PetworksBlocks.GENDERQUEER_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GENDERFLUID_COLLAR, PetworksBlocks.GENDERFLUID_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.AGENDER_COLLAR, PetworksBlocks.AGENDER_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.ARO_COLLAR, PetworksBlocks.ARO_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.ACE_COLLAR, PetworksBlocks.ACE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.AROACE_COLLAR, PetworksBlocks.AROACE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.CLOTH_COLLAR, PetworksBlocks.CLOTH_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.HIDE_COLLAR, PetworksBlocks.HIDE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.LEATHER_COLLAR, PetworksBlocks.LEATHER_COLLAR_WALL);
@@ -60,6 +72,21 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		collarBlock(generator, PetworksBlocks.NETHERITE_COLLAR, PetworksBlocks.NETHERITE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.OBSIDIAN_COLLAR, PetworksBlocks.OBSIDIAN_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.BEDROCK_COLLAR, PetworksBlocks.BEDROCK_COLLAR_WALL);
+
+		proxyCollar(generator,
+			PetworksBlocks.COLLAR,
+			PetworksBlocks.MISSING_COLLAR,
+			PetworksBlocks.PRIDE_COLLAR,
+			PetworksBlocks.TRANS_COLLAR,
+			PetworksBlocks.LESBIAN_COLLAR,
+			PetworksBlocks.GAY_COLLAR,
+			PetworksBlocks.GENDERQUEER_COLLAR,
+			PetworksBlocks.GENDERFLUID_COLLAR,
+			PetworksBlocks.AGENDER_COLLAR,
+			PetworksBlocks.ARO_COLLAR,
+			PetworksBlocks.ACE_COLLAR,
+			PetworksBlocks.AROACE_COLLAR
+		);
 
 		proxyCollar(generator,
 			PetworksBlocks.CLOTH_COLLAR,
@@ -95,6 +122,18 @@ public class PetworksModelGenerator extends FabricModelProvider {
 	@Override
 	public void generateItemModels(final ItemModelGenerator itemModelGenerator) {
 		maidCollarItem(itemModelGenerator, PetworksItems.MAID_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.MISSING_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.PRIDE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.TRANS_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.LESBIAN_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GAY_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GENDERQUEER_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GENDERFLUID_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.AGENDER_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.ARO_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.ACE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.AROACE_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.CLOTH_COLLAR, true);
 		genericCollarItem(itemModelGenerator, PetworksItems.HIDE_COLLAR, true);
 		leatherCollarItem(itemModelGenerator, PetworksItems.LEATHER_COLLAR, true);

@@ -16,6 +16,7 @@ import java.util.ServiceLoader;
 import static gay.ampflower.mod.pet.registry.PetworksItems.BEDROCK_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CHAIN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CLOTH_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.FOX_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.HIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.LEATHER_COLLAR;
@@ -39,6 +40,7 @@ public interface ClientPivot {
 
 		provider.apply((stack, index) -> ((CollarDyeableItem) stack.getItem()).getColor(stack, index),
 			MAID_COLLAR,
+			COLLAR,
 			CLOTH_COLLAR,
 			HIDE_COLLAR,
 			LEATHER_COLLAR,
@@ -52,6 +54,7 @@ public interface ClientPivot {
 					? collar.getColor(tintIndex)
 					: -1,
 			PetworksBlocks.MAID_COLLAR, PetworksBlocks.MAID_COLLAR_WALL,
+			PetworksBlocks.COLLAR, PetworksBlocks.COLLAR_WALL,
 			PetworksBlocks.CLOTH_COLLAR, PetworksBlocks.CLOTH_COLLAR_WALL,
 			PetworksBlocks.HIDE_COLLAR, PetworksBlocks.HIDE_COLLAR_WALL,
 			PetworksBlocks.LEATHER_COLLAR, PetworksBlocks.LEATHER_COLLAR_WALL,

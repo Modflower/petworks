@@ -17,6 +17,42 @@ public final class PetworksBlocks {
 		MAID_COLLAR = register("maid_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		MAID_COLLAR_WALL = register("maid_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	COLLAR = register("collar", new CollarBlock(CollarMaterials.CLOTH)),
+		COLLAR_WALL = register("collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	MISSING_COLLAR = register("missing_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		MISSING_COLLAR_WALL = register("missing_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	PRIDE_COLLAR = register("pride_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		PRIDE_COLLAR_WALL = register("pride_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	TRANS_COLLAR = register("trans_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		TRANS_COLLAR_WALL = register("trans_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	LESBIAN_COLLAR = register("lesbian_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		LESBIAN_COLLAR_WALL = register("lesbian_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GAY_COLLAR = register("gay_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GAY_COLLAR_WALL = register("gay_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GENDERQUEER_COLLAR = register("genderqueer_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GENDERQUEER_COLLAR_WALL = register("genderqueer_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GENDERFLUID_COLLAR = register("genderfluid_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GENDERFLUID_COLLAR_WALL = register("genderfluid_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	AGENDER_COLLAR = register("agender_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		AGENDER_COLLAR_WALL = register("agender_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	ARO_COLLAR = register("aro_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		ARO_COLLAR_WALL = register("aro_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	ACE_COLLAR = register("ace_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		ACE_COLLAR_WALL = register("ace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	AROACE_COLLAR = register("aroace_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		AROACE_COLLAR_WALL = register("aroace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	CLOTH_COLLAR = register("cloth_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		CLOTH_COLLAR_WALL = register("cloth_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 

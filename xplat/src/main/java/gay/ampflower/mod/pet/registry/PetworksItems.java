@@ -33,6 +33,30 @@ public final class PetworksItems {
 	public static final Item
 		MAID_COLLAR = registerDyeableCollar("maid_collar", CollarMaterials.MAID,
 		PetworksBlocks.MAID_COLLAR, PetworksBlocks.MAID_COLLAR_WALL),
+		COLLAR = registerDyeableCollar("collar", CollarMaterials.CLOTH,
+			PetworksBlocks.COLLAR, PetworksBlocks.COLLAR_WALL),
+		MISSING_COLLAR = registerCollar("missing_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.MISSING_COLLAR, PetworksBlocks.MISSING_COLLAR_WALL),
+		PRIDE_COLLAR = registerCollar("pride_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.PRIDE_COLLAR, PetworksBlocks.PRIDE_COLLAR_WALL),
+		TRANS_COLLAR = registerCollar("trans_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.TRANS_COLLAR, PetworksBlocks.TRANS_COLLAR_WALL),
+		LESBIAN_COLLAR = registerCollar("lesbian_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.LESBIAN_COLLAR, PetworksBlocks.LESBIAN_COLLAR_WALL),
+		GAY_COLLAR = registerCollar("gay_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.GAY_COLLAR, PetworksBlocks.GAY_COLLAR_WALL),
+		GENDERQUEER_COLLAR = registerCollar("genderqueer_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.GENDERQUEER_COLLAR, PetworksBlocks.GENDERQUEER_COLLAR_WALL),
+		GENDERFLUID_COLLAR = registerCollar("genderfluid_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.GENDERFLUID_COLLAR, PetworksBlocks.GENDERFLUID_COLLAR_WALL),
+		AGENDER_COLLAR = registerCollar("agender_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.AGENDER_COLLAR, PetworksBlocks.AGENDER_COLLAR_WALL),
+		ARO_COLLAR = registerCollar("aro_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.ARO_COLLAR, PetworksBlocks.ARO_COLLAR_WALL),
+		ACE_COLLAR = registerCollar("ace_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.ACE_COLLAR, PetworksBlocks.ACE_COLLAR_WALL),
+		AROACE_COLLAR = registerCollar("aroace_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.AROACE_COLLAR, PetworksBlocks.AROACE_COLLAR_WALL),
 		CLOTH_COLLAR = registerDyeableCollar("cloth_collar", CollarMaterials.CLOTH,
 			PetworksBlocks.CLOTH_COLLAR, PetworksBlocks.CLOTH_COLLAR_WALL),
 		HIDE_COLLAR = registerDyeableCollar("hide_collar", CollarMaterials.HIDE,
@@ -83,6 +107,7 @@ public final class PetworksItems {
 		if (material.getDurability() != 0) {
 			settings.maxDamage(material.getDurability());
 		}
+		settings.maxCount(1);
 		return settings;
 	}
 
