@@ -1,7 +1,12 @@
 # Petworks
 
-Collars for pets. Wait, you mean you wear those as accessories?
+Collars and guises for furry friends. Nya~
 
 ## What does it add?
 
-Collars. Copper collar. Iron collar. Gold collar. Diamond collar. Maid collar. Amethyst collar.
+Collars. You've got:
+Maid collar, copper collar, pride collar, iron collar,
+lesbian collar, amethyst collar, gay collar, diamond collar.
+
+Guises, instilling the caricatures of mobs into your own player sounds.
+Become a fox, cat, wolf, or maybe even rabbit?
