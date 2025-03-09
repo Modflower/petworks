@@ -16,3 +16,4 @@ jobs:
       artifacts: |
         */build/libs/
         !buildSrc
+      java-version: 21

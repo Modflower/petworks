@@ -19,4 +19,5 @@ jobs:
         !*-sources.jar
         !*-javadoc.jar
       gradle-publish: 'publish'
+      java-version: 21
     secrets: inherit
