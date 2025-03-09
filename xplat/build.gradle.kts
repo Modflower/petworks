@@ -29,3 +29,9 @@ dependencies {
 
 	modCompileOnly(variantOf(rootProject.libs.emi) { classifier("api") })
 }
+
+tasks {
+	sourcesJar {
+		dependsOn("runDatagen")
+	}
+}
