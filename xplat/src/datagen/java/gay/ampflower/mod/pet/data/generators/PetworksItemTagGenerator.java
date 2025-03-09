@@ -13,6 +13,7 @@ import java.util.concurrent.CompletableFuture;
 import static gay.ampflower.mod.pet.registry.PetworksItems.ACE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.AGENDER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.AMETHYST_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.APLATONIC_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.AROACE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.ARO_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.BEDROCK_COLLAR;
@@ -44,6 +45,7 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.MISSING_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.NETHERITE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.OBSIDIAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.OCELOT_GUISE;
+import static gay.ampflower.mod.pet.registry.PetworksItems.PAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.PRIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.QUARTZ_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.RABBIT_GUISE;
@@ -118,6 +120,8 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			ARO_COLLAR,
 			ACE_COLLAR,
 			AROACE_COLLAR,
+			APLATONIC_COLLAR,
+			PAN_COLLAR,
 			CLOTH_COLLAR,
 			HIDE_COLLAR
 		);
@@ -148,7 +152,9 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			INTERSEX_2_COLLAR,
 			ARO_COLLAR,
 			ACE_COLLAR,
-			AROACE_COLLAR
+			AROACE_COLLAR,
+			APLATONIC_COLLAR,
+			PAN_COLLAR
 		);
 
 		getOrCreateTagBuilder(TRINKETS_HAND_BRACELET).addTag(BRACELETS);

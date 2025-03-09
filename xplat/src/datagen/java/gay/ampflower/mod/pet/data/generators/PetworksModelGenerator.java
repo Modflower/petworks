@@ -66,6 +66,8 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		collarBlock(generator, PetworksBlocks.ARO_COLLAR, PetworksBlocks.ARO_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.ACE_COLLAR, PetworksBlocks.ACE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.AROACE_COLLAR, PetworksBlocks.AROACE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.APLATONIC_COLLAR, PetworksBlocks.APLATONIC_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.PAN_COLLAR, PetworksBlocks.PAN_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.CLOTH_COLLAR, PetworksBlocks.CLOTH_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.HIDE_COLLAR, PetworksBlocks.HIDE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.LEATHER_COLLAR, PetworksBlocks.LEATHER_COLLAR_WALL);
@@ -101,7 +103,9 @@ public class PetworksModelGenerator extends FabricModelProvider {
 			PetworksBlocks.INTERSEX_2_COLLAR,
 			PetworksBlocks.ARO_COLLAR,
 			PetworksBlocks.ACE_COLLAR,
-			PetworksBlocks.AROACE_COLLAR
+			PetworksBlocks.AROACE_COLLAR,
+			PetworksBlocks.APLATONIC_COLLAR,
+			PetworksBlocks.PAN_COLLAR
 		);
 
 		proxyCollar(generator,
@@ -158,6 +162,8 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		genericCollarItem(itemModelGenerator, PetworksItems.ARO_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.ACE_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.AROACE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.APLATONIC_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.PAN_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.CLOTH_COLLAR, true);
 		genericCollarItem(itemModelGenerator, PetworksItems.HIDE_COLLAR, true);
 		leatherCollarItem(itemModelGenerator, PetworksItems.LEATHER_COLLAR, true);

@@ -13,6 +13,8 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.AGENDER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.AGENDER_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.AMETHYST_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.AMETHYST_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.APLATONIC_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.APLATONIC_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.AROACE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.AROACE_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.ARO_COLLAR;
@@ -70,6 +72,8 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.NETHERITE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.NETHERITE_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.OBSIDIAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.OBSIDIAN_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.PAN_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.PAN_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PRIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PRIDE_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.QUARTZ_COLLAR;
@@ -105,6 +109,8 @@ public final class PetworksBlockEntities {
 		ARO_COLLAR, ARO_COLLAR_WALL,
 		ACE_COLLAR, ACE_COLLAR_WALL,
 		AROACE_COLLAR, AROACE_COLLAR_WALL,
+		APLATONIC_COLLAR, APLATONIC_COLLAR_WALL,
+		PAN_COLLAR, PAN_COLLAR_WALL,
 		CLOTH_COLLAR, CLOTH_COLLAR_WALL,
 		HIDE_COLLAR, HIDE_COLLAR_WALL,
 		LEATHER_COLLAR, LEATHER_COLLAR_WALL,

@@ -77,6 +77,12 @@ public final class PetworksBlocks {
 	AROACE_COLLAR = register("aroace_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		AROACE_COLLAR_WALL = register("aroace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	APLATONIC_COLLAR = register("aplatonic_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		APLATONIC_COLLAR_WALL = register("aplatonic_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	PAN_COLLAR = register("pan_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		PAN_COLLAR_WALL = register("pan_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	CLOTH_COLLAR = register("cloth_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		CLOTH_COLLAR_WALL = register("cloth_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
