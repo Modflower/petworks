@@ -39,6 +39,10 @@ modrinth {
 	versionNumber.set("${project.version}-fabric")
 	changelog.set(meta.changelog)
 	uploadFile.set(tasks.remapJar)
+	dependencies {
+		required.project("trinkets")
+		optional.project("first-person-model")
+	}
 	gameVersions.set(meta.minecraftCompatible)
 	loaders.addAll("fabric", "quilt")
 }
