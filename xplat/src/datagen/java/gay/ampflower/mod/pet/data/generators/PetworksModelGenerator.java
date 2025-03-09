@@ -47,6 +47,7 @@ public class PetworksModelGenerator extends FabricModelProvider {
 	public void generateBlockStateModels(final BlockStateModelGenerator generator) {
 		collarBlock(generator, PetworksBlocks.MAID_COLLAR, PetworksBlocks.MAID_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.COLLAR, PetworksBlocks.COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.WORLDWIDEPIXEL_COLLAR, PetworksBlocks.WORLDWIDEPIXEL_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.MISSING_COLLAR, PetworksBlocks.MISSING_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.PRIDE_COLLAR, PetworksBlocks.PRIDE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.TRANS_COLLAR, PetworksBlocks.TRANS_COLLAR_WALL);
@@ -85,6 +86,7 @@ public class PetworksModelGenerator extends FabricModelProvider {
 
 		proxyCollar(generator,
 			PetworksBlocks.COLLAR,
+			PetworksBlocks.WORLDWIDEPIXEL_COLLAR,
 			PetworksBlocks.MISSING_COLLAR,
 			PetworksBlocks.PRIDE_COLLAR,
 			PetworksBlocks.TRANS_COLLAR,
@@ -143,6 +145,7 @@ public class PetworksModelGenerator extends FabricModelProvider {
 	public void generateItemModels(final ItemModelGenerator itemModelGenerator) {
 		maidCollarItem(itemModelGenerator, PetworksItems.MAID_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.WORLDWIDEPIXEL_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.MISSING_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.PRIDE_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.TRANS_COLLAR, false);

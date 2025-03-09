@@ -35,6 +35,8 @@ public final class PetworksItems {
 		PetworksBlocks.MAID_COLLAR, PetworksBlocks.MAID_COLLAR_WALL),
 		COLLAR = registerDyeableCollar("collar", CollarMaterials.CLOTH,
 			PetworksBlocks.COLLAR, PetworksBlocks.COLLAR_WALL),
+		WORLDWIDEPIXEL_COLLAR = registerCollar("worldwidepixel_collar", CollarMaterials.CLOTH,
+			PetworksBlocks.WORLDWIDEPIXEL_COLLAR, PetworksBlocks.WORLDWIDEPIXEL_COLLAR_WALL),
 		MISSING_COLLAR = registerCollar("missing_collar", CollarMaterials.CLOTH,
 			PetworksBlocks.MISSING_COLLAR, PetworksBlocks.MISSING_COLLAR_WALL),
 		PRIDE_COLLAR = registerCollar("pride_collar", CollarMaterials.CLOTH,

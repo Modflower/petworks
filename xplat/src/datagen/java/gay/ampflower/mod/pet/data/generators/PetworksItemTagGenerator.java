@@ -53,6 +53,7 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.STRAY_CAT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.TAMED_CAT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.TRANS_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.WOLF_GUISE;
+import static gay.ampflower.mod.pet.registry.PetworksItems.WORLDWIDEPIXEL_COLLAR;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.ARMOR_COLLARS;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.BRACELETS;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.COLLARS;
@@ -101,6 +102,7 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 		getOrCreateTagBuilder(SHEARABLE_COLLARS).add(
 			MAID_COLLAR,
 			COLLAR,
+			WORLDWIDEPIXEL_COLLAR,
 			MISSING_COLLAR,
 			PRIDE_COLLAR,
 			TRANS_COLLAR,
@@ -133,6 +135,7 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 
 		getOrCreateTagBuilder(BRACELETS).add(
 			MAID_COLLAR,
+			WORLDWIDEPIXEL_COLLAR,
 			MISSING_COLLAR,
 			COLLAR,
 			PRIDE_COLLAR,

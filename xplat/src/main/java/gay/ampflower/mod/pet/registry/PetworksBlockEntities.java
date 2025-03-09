@@ -80,6 +80,8 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.QUARTZ_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.QUARTZ_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.TRANS_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.TRANS_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.WORLDWIDEPIXEL_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.WORLDWIDEPIXEL_COLLAR_WALL;
 
 /**
  * @author Ampflower
@@ -90,6 +92,7 @@ public final class PetworksBlockEntities {
 		COLLAR = register("collar", CollarBlockEntity::new,
 		MAID_COLLAR, MAID_COLLAR_WALL,
 		PetworksBlocks.COLLAR, COLLAR_WALL,
+		WORLDWIDEPIXEL_COLLAR, WORLDWIDEPIXEL_COLLAR_WALL,
 		MISSING_COLLAR, MISSING_COLLAR_WALL,
 		PRIDE_COLLAR, PRIDE_COLLAR_WALL,
 		TRANS_COLLAR, TRANS_COLLAR_WALL,

@@ -20,6 +20,9 @@ public final class PetworksBlocks {
 	COLLAR = register("collar", new CollarBlock(CollarMaterials.CLOTH)),
 		COLLAR_WALL = register("collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	WORLDWIDEPIXEL_COLLAR = register("worldwidepixel_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		WORLDWIDEPIXEL_COLLAR_WALL = register("worldwidepixel_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	MISSING_COLLAR = register("missing_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		MISSING_COLLAR_WALL = register("missing_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 

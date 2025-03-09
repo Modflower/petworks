@@ -60,6 +60,7 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.STRAY_CAT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.TAMED_CAT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.TRANS_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.WOLF_GUISE;
+import static gay.ampflower.mod.pet.registry.PetworksItems.WORLDWIDEPIXEL_COLLAR;
 
 /**
  * @author Ampflower
@@ -75,6 +76,7 @@ public interface Pivot {
 	static <A> void registerCollars(BiConsumer<Item, A> collarConsumer, A cosmetic, A armor, A gimick) {
 		collarConsumer.accept(MAID_COLLAR, cosmetic);
 		collarConsumer.accept(COLLAR, cosmetic);
+		collarConsumer.accept(WORLDWIDEPIXEL_COLLAR, cosmetic);
 		collarConsumer.accept(MISSING_COLLAR, cosmetic);
 		collarConsumer.accept(PRIDE_COLLAR, cosmetic);
 		collarConsumer.accept(TRANS_COLLAR, cosmetic);
@@ -115,6 +117,7 @@ public interface Pivot {
 	static void registerCollars(Consumer<ItemConvertible> collarConsumer) {
 		collarConsumer.accept(MAID_COLLAR);
 		collarConsumer.accept(COLLAR);
+		collarConsumer.accept(WORLDWIDEPIXEL_COLLAR);
 		collarConsumer.accept(MISSING_COLLAR);
 		collarConsumer.accept(PRIDE_COLLAR);
 		collarConsumer.accept(TRANS_COLLAR);
