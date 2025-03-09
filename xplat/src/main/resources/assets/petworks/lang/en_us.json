@@ -76,12 +76,12 @@
 	"tag.item.petworks.enchantable.wearable": "Enchantable Wearables",
 
 	"tag.item.trinkets.chest.collar": "Equippable in Collar Slot",
-	"tag.item.trinkets.chest.guise": "Equippable in Guise Slot",
+	"tag.item.trinkets.chest.guise": "Equippable in Caricature Slot",
 	"tag.item.trinkets.hand.bracelet": "Equippable in Bracelet Slot",
 	"tag.item.trinkets.offhand.bracelet": "Equippable in Bracelet Slot",
 
 	"tag.item.curios.collar": "Equippable in Collar Slot",
-	"tag.item.curios.guise": "Equippable in Guise Slot",
+	"tag.item.curios.guise": "Equippable in Caricature Slot",
 	"tag.item.curios.bracelet": "Equippable in Bracelet Slot"
 }
 
