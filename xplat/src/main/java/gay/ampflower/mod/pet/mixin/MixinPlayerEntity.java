@@ -39,6 +39,10 @@ public abstract class MixinPlayerEntity extends LivingEntity {
 
 	@Inject(method = "tick", at = @At("TAIL"))
 	private void addAmbience(CallbackInfo callback) {
+		if (this.isSpectator()) {
+			return;
+		}
+
 		if (this.isAlive() && this.random.nextInt(1000) < this.ambientSoundChance++) {
 			this.resetSoundDelay();
 			Trinkets.getGuise(this).playAmbientSound(this);
