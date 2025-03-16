@@ -67,6 +67,7 @@ import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.GUISES;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.HEAD_ARMOR;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.SHEARABLE_COLLARS;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.TRINKETS_AGLET;
+import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.TRINKETS_ANKLET;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.TRINKETS_COLLAR;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.TRINKETS_GUISE;
 import static gay.ampflower.mod.pet.registry.tag.PetworksItemTags.TRINKETS_HAND_BRACELET;
@@ -164,6 +165,7 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 		getOrCreateTagBuilder(TRINKETS_HAND_BRACELET).addTag(BRACELETS);
 		getOrCreateTagBuilder(TRINKETS_OFFHAND_BRACELET).addTag(BRACELETS);
 		getOrCreateTagBuilder(CURIOS_BRACELET).addTag(BRACELETS);
+		getOrCreateTagBuilder(TRINKETS_ANKLET).addTag(BRACELETS);
 		getOrCreateTagBuilder(TRINKETS_AGLET).addTag(BRACELETS);
 
 		getOrCreateTagBuilder(GUISES).add(

@@ -27,6 +27,7 @@ public class CollarRenderer {
 	private static final float D = 0.075f;
 
 	public void render(final Part part,
+							 final int index,
 							 final ItemStack stack,
 							 final EntityModel<? extends LivingEntity> contextModel,
 							 final MatrixStack matrices,
@@ -42,7 +43,7 @@ public class CollarRenderer {
 		}
 		if (contextModel instanceof BipedEntityModel<? extends LivingEntity> bipedModel) {
 			if (part == Part.LEGS || part == Part.FEET) {
-				renderAnklets(entity, bipedModel, contextModel.child, stack, part, matrices, vertexConsumers, light);
+				renderAnklets(entity, bipedModel, contextModel.child, stack, part, index, matrices, vertexConsumers, light);
 				return;
 			}
 			renderBiped(stack, bipedModel, matrices, vertexConsumers, light, entity);
@@ -188,7 +189,7 @@ public class CollarRenderer {
 		matrices.pop();
 	}
 
-	private void renderAnklets(LivingEntity entity, BipedEntityModel<?> context, boolean child, ItemStack stack, Part part, MatrixStack matrices, VertexConsumerProvider provider, int light) {
+	private void renderAnklets(LivingEntity entity, BipedEntityModel<?> context, boolean child, ItemStack stack, Part part, int index, MatrixStack matrices, VertexConsumerProvider provider, int light) {
 		final var itemRenderer = MinecraftClient.getInstance().getItemRenderer();
 		light = light(entity, stack, light);
 
@@ -198,8 +199,12 @@ public class CollarRenderer {
 			matrices.scale(.5f, .5f, .5f);
 		}
 
-		renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_RIGHT_HAND, Arm.RIGHT, matrices, provider, light, itemRenderer);
-		renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_LEFT_HAND, Arm.LEFT, matrices, provider, light, itemRenderer);
+		if ((index & 1) == 0) {
+			renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_RIGHT_HAND, Arm.RIGHT, matrices, provider, light, itemRenderer);
+		}
+		if ((index & 1) != 0) {
+			renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_LEFT_HAND, Arm.LEFT, matrices, provider, light, itemRenderer);
+		}
 		matrices.pop();
 	}
 

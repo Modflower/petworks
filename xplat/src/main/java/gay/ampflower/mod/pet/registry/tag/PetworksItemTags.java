@@ -24,6 +24,7 @@ public final class PetworksItemTags {
 	public static final TagKey<Item> TRINKETS_HAND_BRACELET = TagKey.of(RegistryKeys.ITEM, Identifier.of("trinkets", "hand/bracelet"));
 	public static final TagKey<Item> TRINKETS_OFFHAND_BRACELET = TagKey.of(RegistryKeys.ITEM, Identifier.of("trinkets", "offhand/bracelet"));
 	public static final TagKey<Item> TRINKETS_AGLET = TagKey.of(RegistryKeys.ITEM, Identifier.of("trinkets", "feet/aglet"));
+	public static final TagKey<Item> TRINKETS_ANKLET = TagKey.of(RegistryKeys.ITEM, Identifier.of("trinkets", "feet/anklet"));
 
 	public static final TagKey<Item> CURIOS_COLLAR = TagKey.of(RegistryKeys.ITEM, Identifier.of("curios", "collar"));
 	public static final TagKey<Item> CURIOS_GUISE = TagKey.of(RegistryKeys.ITEM, Identifier.of("curios", "guise"));

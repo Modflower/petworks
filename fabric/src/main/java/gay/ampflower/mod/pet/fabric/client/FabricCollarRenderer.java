@@ -32,7 +32,7 @@ public class FabricCollarRenderer extends CollarRenderer implements TrinketRende
 		final float limbAngle, final float limbDistance,
 		final float tickDelta, final float animationProgress,
 		final float headYaw, final float headPitch) {
-		super.render(toPart(slotReference), stack, contextModel, matrices, vertexConsumers, light, entity, headYaw, headPitch);
+		super.render(toPart(slotReference), slotReference.index(), stack, contextModel, matrices, vertexConsumers, light, entity, headYaw, headPitch);
 	}
 
 	private static Part toPart(SlotReference reference) {
@@ -59,7 +59,7 @@ public class FabricCollarRenderer extends CollarRenderer implements TrinketRende
 		if (slot != EquipmentSlot.HEAD) {
 			return;
 		}
-		super.render(Part.HEAD, stack, contextModel, matrices, vertexConsumers, light, entity,
+		super.render(Part.HEAD, 0, stack, contextModel, matrices, vertexConsumers, light, entity,
 			RenderUtil.deg(contextModel.head.yaw),
 			RenderUtil.deg(contextModel.head.pitch));
 	}

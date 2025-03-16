@@ -60,6 +60,8 @@
 	"trinkets.slot.hand.bracelet": "Bracelet",
 	"trinkets.slot.offhand.bracelet": "Bracelet",
 
+	"trinkets.slot.feet.anklet": "Anklet",
+
 	"curios.identifier.guise": "Caricature",
 	"curios.identifier.collar": "Collar",
 
@@ -79,6 +81,7 @@
 	"tag.item.trinkets.chest.guise": "Equippable in Caricature Slot",
 	"tag.item.trinkets.hand.bracelet": "Equippable in Bracelet Slot",
 	"tag.item.trinkets.offhand.bracelet": "Equippable in Bracelet Slot",
+	"tag.item.trinkets.feet.anklet": "Equippable in Anklet Slot",
 
 	"tag.item.curios.collar": "Equippable in Collar Slot",
 	"tag.item.curios.guise": "Equippable in Caricature Slot",
