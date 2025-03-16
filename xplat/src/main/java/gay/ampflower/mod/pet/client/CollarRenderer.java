@@ -41,6 +41,10 @@ public class CollarRenderer {
 			return;
 		}
 		if (contextModel instanceof BipedEntityModel<? extends LivingEntity> bipedModel) {
+			if (part == Part.LEGS || part == Part.FEET) {
+				renderAnklets(entity, bipedModel, contextModel.child, stack, part, matrices, vertexConsumers, light);
+				return;
+			}
 			renderBiped(stack, bipedModel, matrices, vertexConsumers, light, entity);
 		}
 	}
@@ -181,6 +185,48 @@ public class CollarRenderer {
 			null,
 			0
 		);
+		matrices.pop();
+	}
+
+	private void renderAnklets(LivingEntity entity, BipedEntityModel<?> context, boolean child, ItemStack stack, Part part, MatrixStack matrices, VertexConsumerProvider provider, int light) {
+		final var itemRenderer = MinecraftClient.getInstance().getItemRenderer();
+		light = light(entity, stack, light);
+
+		matrices.push();
+		if (child) {
+			matrices.translate(0, .75f, 0);
+			matrices.scale(.5f, .5f, .5f);
+		}
+
+		renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_RIGHT_HAND, Arm.RIGHT, matrices, provider, light, itemRenderer);
+		renderAnklet(entity, context, stack, ModelTransformationMode.THIRD_PERSON_LEFT_HAND, Arm.LEFT, matrices, provider, light, itemRenderer);
+		matrices.pop();
+	}
+
+	private void renderAnklet(LivingEntity entity, BipedEntityModel<?> context, ItemStack stack, ModelTransformationMode transform, Arm arm, MatrixStack matrices, VertexConsumerProvider vertexConsumers, int light, ItemRenderer itemRenderer) {
+		matrices.push();
+		if (arm == Arm.LEFT) {
+			context.leftLeg.rotate(matrices);
+		} else {
+			context.rightLeg.rotate(matrices);
+		}
+		matrices.multiply(RotationAxis.POSITIVE_X.rotationDegrees(-90F));
+		matrices.multiply(RotationAxis.POSITIVE_Y.rotationDegrees(180F));
+		matrices.translate(0, 0.125F, -0.625F);
+
+		itemRenderer.renderItem(
+			entity,
+			stack,
+			transform,
+			arm == Arm.LEFT,
+			matrices,
+			vertexConsumers,
+			entity.getWorld(),
+			light,
+			OverlayTexture.DEFAULT_UV,
+			entity.getId() + transform.ordinal()
+		);
+
 		matrices.pop();
 	}
 
