@@ -3,6 +3,7 @@ package gay.ampflower.mod.pet.item;
 import gay.ampflower.mod.pet.component.type.GlowingComponent;
 import gay.ampflower.mod.pet.registry.tag.PetworksItemTags;
 import gay.ampflower.mod.pet.support.ServerSupport;
+import gay.ampflower.mod.pet.support.SlotPriorities;
 import gay.ampflower.mod.pet.support.TrinketItem;
 import gay.ampflower.mod.pet.support.Trinkets;
 import gay.ampflower.mod.pet.util.ItemUtils;
@@ -81,7 +82,9 @@ public class CollarItem extends VerticallyAttachableBlockItem implements Wearabl
 				return ActionResult.SUCCESS;
 			}
 			return ActionResult.FAIL;
-		} else if (!Util.isAdventure(user, entity.getPos()) && Trinkets.INSTANCE.equip(entity, stack)) {
+		} else if (!Util.isAdventure(user, entity.getPos()) &&
+			Trinkets.INSTANCE.equip(entity, stack, SlotPriorities.COLLAR, SlotPriorities.NECKLACE)
+		) {
 			return ActionResult.SUCCESS;
 		}
 		return super.useOnEntity(stack, user, entity, hand);
@@ -105,7 +108,7 @@ public class CollarItem extends VerticallyAttachableBlockItem implements Wearabl
 	@Override
 	public TypedActionResult<ItemStack> use(final World world, final PlayerEntity user, final Hand hand) {
 		final var stack = user.getStackInHand(hand).copy();
-		if (Trinkets.INSTANCE.equip(user, stack)) {
+		if (Trinkets.INSTANCE.equip(user, stack, SlotPriorities.COLLAR, SlotPriorities.NECKLACE)) {
 			return TypedActionResult.success(ItemStack.EMPTY, true);
 		}
 		return super.use(world, user, hand);

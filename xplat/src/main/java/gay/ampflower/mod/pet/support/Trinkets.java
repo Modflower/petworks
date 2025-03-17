@@ -21,6 +21,8 @@ public interface Trinkets {
 
 	boolean equip(final LivingEntity entity, final ItemStack trinket);
 
+	boolean equip(final LivingEntity entity, final ItemStack trinket, final SlotPriority... priority);
+
 	static Guise getGuise(final LivingEntity entity) {
 		final var stacks = INSTANCE.getStacks(entity, stack -> stack.getItem() instanceof Guise);
 		if (stacks.isEmpty()) {
