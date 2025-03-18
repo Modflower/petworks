@@ -50,9 +50,8 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		collarBlock(generator, PetworksBlocks.WORLDWIDEPIXEL_COLLAR, PetworksBlocks.WORLDWIDEPIXEL_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.MISSING_COLLAR, PetworksBlocks.MISSING_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.PRIDE_COLLAR, PetworksBlocks.PRIDE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.PROGRESS_COLLAR, PetworksBlocks.PROGRESS_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.TRANS_COLLAR, PetworksBlocks.TRANS_COLLAR_WALL);
-		collarBlock(generator, PetworksBlocks.LESBIAN_COLLAR, PetworksBlocks.LESBIAN_COLLAR_WALL);
-		collarBlock(generator, PetworksBlocks.GAY_COLLAR, PetworksBlocks.GAY_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.GENDERQUEER_COLLAR, PetworksBlocks.GENDERQUEER_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.GENDERFLUID_COLLAR, PetworksBlocks.GENDERFLUID_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.AGENDER_COLLAR, PetworksBlocks.AGENDER_COLLAR_WALL);
@@ -64,11 +63,21 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		collarBlock(generator, PetworksBlocks.DEMIGIRL_2_COLLAR, PetworksBlocks.DEMIGIRL_2_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.INTERSEX_1_COLLAR, PetworksBlocks.INTERSEX_1_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.INTERSEX_2_COLLAR, PetworksBlocks.INTERSEX_2_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.NONBINARY_COLLAR, PetworksBlocks.NONBINARY_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.ARO_COLLAR, PetworksBlocks.ARO_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.DEMIROMANTIC_COLLAR, PetworksBlocks.DEMIROMANTIC_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.ACE_COLLAR, PetworksBlocks.ACE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.DEMISEXUAL_COLLAR, PetworksBlocks.DEMISEXUAL_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.AROACE_COLLAR, PetworksBlocks.AROACE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.APLATONIC_COLLAR, PetworksBlocks.APLATONIC_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GREYROSE_COLLAR, PetworksBlocks.GREYROSE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GREYACE_COLLAR, PetworksBlocks.GREYACE_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GREYARO_COLLAR, PetworksBlocks.GREYARO_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.LESBIAN_COLLAR, PetworksBlocks.LESBIAN_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.GAY_COLLAR, PetworksBlocks.GAY_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.BISEXUAL_COLLAR, PetworksBlocks.BISEXUAL_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.PAN_COLLAR, PetworksBlocks.PAN_COLLAR_WALL);
+		collarBlock(generator, PetworksBlocks.POLYAMORY_COLLAR, PetworksBlocks.POLYAMORY_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.CLOTH_COLLAR, PetworksBlocks.CLOTH_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.HIDE_COLLAR, PetworksBlocks.HIDE_COLLAR_WALL);
 		collarBlock(generator, PetworksBlocks.LEATHER_COLLAR, PetworksBlocks.LEATHER_COLLAR_WALL);
@@ -89,9 +98,8 @@ public class PetworksModelGenerator extends FabricModelProvider {
 			PetworksBlocks.WORLDWIDEPIXEL_COLLAR,
 			PetworksBlocks.MISSING_COLLAR,
 			PetworksBlocks.PRIDE_COLLAR,
+			PetworksBlocks.PROGRESS_COLLAR,
 			PetworksBlocks.TRANS_COLLAR,
-			PetworksBlocks.LESBIAN_COLLAR,
-			PetworksBlocks.GAY_COLLAR,
 			PetworksBlocks.GENDERQUEER_COLLAR,
 			PetworksBlocks.GENDERFLUID_COLLAR,
 			PetworksBlocks.AGENDER_COLLAR,
@@ -103,11 +111,21 @@ public class PetworksModelGenerator extends FabricModelProvider {
 			PetworksBlocks.DEMIGIRL_2_COLLAR,
 			PetworksBlocks.INTERSEX_1_COLLAR,
 			PetworksBlocks.INTERSEX_2_COLLAR,
+			PetworksBlocks.NONBINARY_COLLAR,
 			PetworksBlocks.ARO_COLLAR,
+			PetworksBlocks.DEMIROMANTIC_COLLAR,
 			PetworksBlocks.ACE_COLLAR,
+			PetworksBlocks.DEMISEXUAL_COLLAR,
 			PetworksBlocks.AROACE_COLLAR,
 			PetworksBlocks.APLATONIC_COLLAR,
-			PetworksBlocks.PAN_COLLAR
+			PetworksBlocks.GREYROSE_COLLAR,
+			PetworksBlocks.GREYACE_COLLAR,
+			PetworksBlocks.GREYARO_COLLAR,
+			PetworksBlocks.LESBIAN_COLLAR,
+			PetworksBlocks.BISEXUAL_COLLAR,
+			PetworksBlocks.GAY_COLLAR,
+			PetworksBlocks.PAN_COLLAR,
+			PetworksBlocks.POLYAMORY_COLLAR
 		);
 
 		proxyCollar(generator,
@@ -148,9 +166,8 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		genericCollarItem(itemModelGenerator, PetworksItems.WORLDWIDEPIXEL_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.MISSING_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.PRIDE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.PROGRESS_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.TRANS_COLLAR, false);
-		genericCollarItem(itemModelGenerator, PetworksItems.LESBIAN_COLLAR, false);
-		genericCollarItem(itemModelGenerator, PetworksItems.GAY_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.GENDERQUEER_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.GENDERFLUID_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.AGENDER_COLLAR, false);
@@ -162,11 +179,21 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		genericCollarItem(itemModelGenerator, PetworksItems.DEMIGIRL_2_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.INTERSEX_1_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.INTERSEX_2_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.NONBINARY_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.ARO_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.DEMIROMANTIC_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.ACE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.DEMISEXUAL_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.AROACE_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.APLATONIC_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GREYROSE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GREYACE_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GREYARO_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.LESBIAN_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.GAY_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.BISEXUAL_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.PAN_COLLAR, false);
+		genericCollarItem(itemModelGenerator, PetworksItems.POLYAMORY_COLLAR, false);
 		genericCollarItem(itemModelGenerator, PetworksItems.CLOTH_COLLAR, true);
 		genericCollarItem(itemModelGenerator, PetworksItems.HIDE_COLLAR, true);
 		leatherCollarItem(itemModelGenerator, PetworksItems.LEATHER_COLLAR, true);

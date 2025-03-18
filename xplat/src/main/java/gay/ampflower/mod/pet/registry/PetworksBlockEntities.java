@@ -23,6 +23,8 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.BEDROCK_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.BEDROCK_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.BIGENDER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.BIGENDER_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.BISEXUAL_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.BISEXUAL_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.CHAIN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.CHAIN_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.CLOTH_COLLAR;
@@ -40,6 +42,10 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIGIRL_1_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIGIRL_1_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIGIRL_2_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIGIRL_2_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIROMANTIC_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMIROMANTIC_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMISEXUAL_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.DEMISEXUAL_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.DIAMOND_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.DIAMOND_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.EMERALD_COLLAR;
@@ -52,6 +58,12 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.GENDERQUEER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.GENDERQUEER_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.GOLD_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.GOLD_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYACE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYACE_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYARO_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYARO_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYROSE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.GREYROSE_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.HIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.HIDE_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.INTERSEX_1_COLLAR;
@@ -70,12 +82,18 @@ import static gay.ampflower.mod.pet.registry.PetworksBlocks.MISSING_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.MISSING_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.NETHERITE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.NETHERITE_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.NONBINARY_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.NONBINARY_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.OBSIDIAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.OBSIDIAN_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PAN_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.POLYAMORY_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.POLYAMORY_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PRIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.PRIDE_COLLAR_WALL;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.PROGRESS_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksBlocks.PROGRESS_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.QUARTZ_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.QUARTZ_COLLAR_WALL;
 import static gay.ampflower.mod.pet.registry.PetworksBlocks.TRANS_COLLAR;
@@ -95,9 +113,8 @@ public final class PetworksBlockEntities {
 		WORLDWIDEPIXEL_COLLAR, WORLDWIDEPIXEL_COLLAR_WALL,
 		MISSING_COLLAR, MISSING_COLLAR_WALL,
 		PRIDE_COLLAR, PRIDE_COLLAR_WALL,
+		PROGRESS_COLLAR, PROGRESS_COLLAR_WALL,
 		TRANS_COLLAR, TRANS_COLLAR_WALL,
-		LESBIAN_COLLAR, LESBIAN_COLLAR_WALL,
-		GAY_COLLAR, GAY_COLLAR_WALL,
 		GENDERQUEER_COLLAR, GENDERQUEER_COLLAR_WALL,
 		GENDERFLUID_COLLAR, GENDERFLUID_COLLAR_WALL,
 		AGENDER_COLLAR, AGENDER_COLLAR_WALL,
@@ -109,11 +126,21 @@ public final class PetworksBlockEntities {
 		DEMIGIRL_2_COLLAR, DEMIGIRL_2_COLLAR_WALL,
 		INTERSEX_1_COLLAR, INTERSEX_1_COLLAR_WALL,
 		INTERSEX_2_COLLAR, INTERSEX_2_COLLAR_WALL,
+		NONBINARY_COLLAR, NONBINARY_COLLAR_WALL,
 		ARO_COLLAR, ARO_COLLAR_WALL,
+		DEMIROMANTIC_COLLAR, DEMIROMANTIC_COLLAR_WALL,
 		ACE_COLLAR, ACE_COLLAR_WALL,
+		DEMISEXUAL_COLLAR, DEMISEXUAL_COLLAR_WALL,
 		AROACE_COLLAR, AROACE_COLLAR_WALL,
 		APLATONIC_COLLAR, APLATONIC_COLLAR_WALL,
+		GREYROSE_COLLAR, GREYROSE_COLLAR_WALL,
+		GREYACE_COLLAR, GREYACE_COLLAR_WALL,
+		GREYARO_COLLAR, GREYARO_COLLAR_WALL,
+		LESBIAN_COLLAR, LESBIAN_COLLAR_WALL,
+		GAY_COLLAR, GAY_COLLAR_WALL,
+		BISEXUAL_COLLAR, BISEXUAL_COLLAR_WALL,
 		PAN_COLLAR, PAN_COLLAR_WALL,
+		POLYAMORY_COLLAR, POLYAMORY_COLLAR_WALL,
 		CLOTH_COLLAR, CLOTH_COLLAR_WALL,
 		HIDE_COLLAR, HIDE_COLLAR_WALL,
 		LEATHER_COLLAR, LEATHER_COLLAR_WALL,

@@ -18,6 +18,7 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.AROACE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.ARO_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.BEDROCK_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.BIGENDER_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.BISEXUAL_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CHAIN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.CLOTH_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.COLLAR;
@@ -27,6 +28,8 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIBOY_2_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGENDER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGIRL_1_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIGIRL_2_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMIROMANTIC_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.DEMISEXUAL_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.DIAMOND_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.EMERALD_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.FOX_GUISE;
@@ -34,6 +37,9 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.GAY_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.GENDERFLUID_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.GENDERQUEER_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.GOLD_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.GREYACE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.GREYARO_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.GREYROSE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.HIDE_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.INTERSEX_1_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.INTERSEX_2_COLLAR;
@@ -43,10 +49,13 @@ import static gay.ampflower.mod.pet.registry.PetworksItems.LESBIAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.MAID_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.MISSING_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.NETHERITE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.NONBINARY_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.OBSIDIAN_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.OCELOT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.PAN_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.POLYAMORY_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.PRIDE_COLLAR;
+import static gay.ampflower.mod.pet.registry.PetworksItems.PROGRESS_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.QUARTZ_COLLAR;
 import static gay.ampflower.mod.pet.registry.PetworksItems.RABBIT_GUISE;
 import static gay.ampflower.mod.pet.registry.PetworksItems.STRAY_CAT_GUISE;
@@ -107,9 +116,8 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			WORLDWIDEPIXEL_COLLAR,
 			MISSING_COLLAR,
 			PRIDE_COLLAR,
+			PROGRESS_COLLAR,
 			TRANS_COLLAR,
-			LESBIAN_COLLAR,
-			GAY_COLLAR,
 			GENDERQUEER_COLLAR,
 			GENDERFLUID_COLLAR,
 			AGENDER_COLLAR,
@@ -121,11 +129,21 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			DEMIGIRL_2_COLLAR,
 			INTERSEX_1_COLLAR,
 			INTERSEX_2_COLLAR,
+			NONBINARY_COLLAR,
 			ARO_COLLAR,
+			DEMIROMANTIC_COLLAR,
 			ACE_COLLAR,
+			DEMISEXUAL_COLLAR,
 			AROACE_COLLAR,
 			APLATONIC_COLLAR,
+			GREYROSE_COLLAR,
+			GREYACE_COLLAR,
+			GREYARO_COLLAR,
+			LESBIAN_COLLAR,
+			GAY_COLLAR,
+			BISEXUAL_COLLAR,
 			PAN_COLLAR,
+			POLYAMORY_COLLAR,
 			CLOTH_COLLAR,
 			HIDE_COLLAR
 		);
@@ -141,9 +159,8 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			MISSING_COLLAR,
 			COLLAR,
 			PRIDE_COLLAR,
+			PROGRESS_COLLAR,
 			TRANS_COLLAR,
-			LESBIAN_COLLAR,
-			GAY_COLLAR,
 			GENDERQUEER_COLLAR,
 			GENDERFLUID_COLLAR,
 			AGENDER_COLLAR,
@@ -155,11 +172,23 @@ public class PetworksItemTagGenerator extends FabricTagProvider.ItemTagProvider 
 			DEMIGIRL_2_COLLAR,
 			INTERSEX_1_COLLAR,
 			INTERSEX_2_COLLAR,
+			NONBINARY_COLLAR,
 			ARO_COLLAR,
+			DEMIROMANTIC_COLLAR,
 			ACE_COLLAR,
+			DEMISEXUAL_COLLAR,
 			AROACE_COLLAR,
 			APLATONIC_COLLAR,
-			PAN_COLLAR
+			GREYROSE_COLLAR,
+			GREYACE_COLLAR,
+			GREYARO_COLLAR,
+			LESBIAN_COLLAR,
+			GAY_COLLAR,
+			BISEXUAL_COLLAR,
+			LESBIAN_COLLAR,
+			GAY_COLLAR,
+			PAN_COLLAR,
+			POLYAMORY_COLLAR
 		);
 
 		getOrCreateTagBuilder(TRINKETS_HAND_BRACELET).addTag(BRACELETS);

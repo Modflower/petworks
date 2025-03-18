@@ -29,14 +29,11 @@ public final class PetworksBlocks {
 	PRIDE_COLLAR = register("pride_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		PRIDE_COLLAR_WALL = register("pride_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	PROGRESS_COLLAR = register("progress_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		PROGRESS_COLLAR_WALL = register("progress_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	TRANS_COLLAR = register("trans_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		TRANS_COLLAR_WALL = register("trans_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
-
-	LESBIAN_COLLAR = register("lesbian_collar", new CollarBlock(CollarMaterials.CLOTH)),
-		LESBIAN_COLLAR_WALL = register("lesbian_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
-
-	GAY_COLLAR = register("gay_collar", new CollarBlock(CollarMaterials.CLOTH)),
-		GAY_COLLAR_WALL = register("gay_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
 	GENDERQUEER_COLLAR = register("genderqueer_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		GENDERQUEER_COLLAR_WALL = register("genderqueer_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
@@ -71,11 +68,20 @@ public final class PetworksBlocks {
 	INTERSEX_2_COLLAR = register("intersex_2_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		INTERSEX_2_COLLAR_WALL = register("intersex_2_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	NONBINARY_COLLAR = register("nonbinary_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		NONBINARY_COLLAR_WALL = register("nonbinary_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	ARO_COLLAR = register("aro_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		ARO_COLLAR_WALL = register("aro_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	DEMIROMANTIC_COLLAR = register("demiromantic_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMIROMANTIC_COLLAR_WALL = register("demiromantic_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	ACE_COLLAR = register("ace_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		ACE_COLLAR_WALL = register("ace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	DEMISEXUAL_COLLAR = register("demisexual_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		DEMISEXUAL_COLLAR_WALL = register("demisexual_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
 	AROACE_COLLAR = register("aroace_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		AROACE_COLLAR_WALL = register("aroace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
@@ -83,8 +89,29 @@ public final class PetworksBlocks {
 	APLATONIC_COLLAR = register("aplatonic_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		APLATONIC_COLLAR_WALL = register("aplatonic_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
+	GREYROSE_COLLAR = register("greyrose_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GREYROSE_COLLAR_WALL = register("greyrose_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GREYACE_COLLAR = register("greyace_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GREYACE_COLLAR_WALL = register("greyace_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GREYARO_COLLAR = register("greyaro_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GREYARO_COLLAR_WALL = register("greyaro_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	LESBIAN_COLLAR = register("lesbian_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		LESBIAN_COLLAR_WALL = register("lesbian_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	GAY_COLLAR = register("gay_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		GAY_COLLAR_WALL = register("gay_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	BISEXUAL_COLLAR = register("bisexual_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		BISEXUAL_COLLAR_WALL = register("bisexual_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
 	PAN_COLLAR = register("pan_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		PAN_COLLAR_WALL = register("pan_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
+
+	POLYAMORY_COLLAR = register("polyamory_collar", new CollarBlock(CollarMaterials.CLOTH)),
+		POLYAMORY_COLLAR_WALL = register("polyamory_collar_wall", new CollarBlock(CollarMaterials.CLOTH)),
 
 	CLOTH_COLLAR = register("cloth_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		CLOTH_COLLAR_WALL = register("cloth_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
