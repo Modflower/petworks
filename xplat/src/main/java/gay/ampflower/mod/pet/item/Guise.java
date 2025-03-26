@@ -58,7 +58,6 @@ public interface Guise {
 
 	default boolean playAttackSound(final @NotNull LivingEntity wearer) {
 		final var sound = getAttackSound(wearer);
-		System.out.printf("%s: %s -> %s\n", this, wearer, sound);
 		if (sound == null) {
 			return false;
 		}
