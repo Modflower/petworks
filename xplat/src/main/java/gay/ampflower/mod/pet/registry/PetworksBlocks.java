@@ -111,7 +111,7 @@ public final class PetworksBlocks {
 		PAN_COLLAR_WALL = register("pan_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
 	POLYAMORY_COLLAR = register("polyamory_collar", new CollarBlock(CollarMaterials.CLOTH)),
-		POLYAMORY_COLLAR_WALL = register("polyamory_collar_wall", new CollarBlock(CollarMaterials.CLOTH)),
+		POLYAMORY_COLLAR_WALL = register("polyamory_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
 
 	CLOTH_COLLAR = register("cloth_collar", new CollarBlock(CollarMaterials.CLOTH)),
 		CLOTH_COLLAR_WALL = register("cloth_collar_wall", new WallCollarBlock(CollarMaterials.CLOTH)),
