@@ -337,7 +337,7 @@ public class PetworksModelGenerator extends FabricModelProvider {
 		final var spriteModel = new Model(Optional.of(sprite), Optional.empty());
 
 		return new ForgeSeparateTransformsModel(
-			Optional.of(sprite), Optional.empty(), Optional.of("forge:separate_transforms"),
+			Optional.of(sprite), Optional.empty(), Optional.of("neoforge:separate_transforms"),
 			Optional.of(GuiLight.FRONT), Optional.of(model), Map.of(
 			"gui", spriteModel,
 			"fixed", spriteModel
