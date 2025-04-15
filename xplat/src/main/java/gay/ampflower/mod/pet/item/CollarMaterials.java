@@ -12,6 +12,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.DyeColor;
+import net.minecraft.util.math.ColorHelper;
 
 import java.util.function.Supplier;
 
@@ -80,7 +81,7 @@ public enum CollarMaterials implements CollarMaterial {
 		this.repairMaterial = repairMaterial;
 		this.equipSound = equipSound;
 		this.soundGroup = soundGroup;
-		this.colour = colour;
+		this.colour = ColorHelper.Argb.fullAlpha(colour);
 		this.layeredColour = layeredColor;
 	}
 

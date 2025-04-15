@@ -5,8 +5,9 @@ import gay.ampflower.mod.pet.registry.PetworksDataComponentTypes;
 import it.unimi.dsi.fastutil.ints.IntImmutableList;
 import it.unimi.dsi.fastutil.ints.IntList;
 import net.minecraft.block.Block;
-import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.DyedColorComponent;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.math.ColorHelper;
 
 import java.util.Arrays;
 
@@ -31,18 +32,14 @@ public class CollarDyeableItem extends CollarItem {
 			if (index > 0) {
 				return -1;
 			}
-			final var colourFallback = stack.get(DataComponentTypes.DYED_COLOR);
-			if (colourFallback != null) {
-				return colourFallback.rgb();
-			}
-			return material.getColour();
+			return DyedColorComponent.getColor(stack, material.getColour());
 		}
 
 		final var list = colours.rgbs();
 		if (list == null || index >= list.size()) {
 			return -1;
 		}
-		return list.getInt(index);
+		return ColorHelper.Argb.fullAlpha(list.getInt(index));
 	}
 
 	public void setColor(final ItemStack stack, int index, int colour) {
