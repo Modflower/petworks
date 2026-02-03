@@ -74,6 +74,8 @@ public class PetworksRecipeGenerator extends FabricRecipeProvider {
 		createPrideCollarRecipe(PetworksItems.PAN_COLLAR,Items.CHEST,Dyes.PINK,Dyes.YELLOW,Dyes.LIGHT_BLUE).offerTo(exporter);
 		createPrideCollarRecipe(PetworksItems.POLYAMORY_COLLAR,Items.BUNDLE,Items.GOLD_NUGGET,Dyes.WHITE,Dyes.LIGHT_BLUE,Dyes.RED,Dyes.PURPLE).offerTo(exporter);
 
+		createSpecialCollarRecipe(PetworksItems.MISSING_COLLAR,Items.AMETHYST_SHARD,Items.OBSIDIAN).offerTo(exporter);
+
 		SmithingTransformRecipeJsonBuilder.create(
 			Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
 			Ingredient.ofItems(PetworksItems.DIAMOND_COLLAR),
@@ -172,24 +174,37 @@ public class PetworksRecipeGenerator extends FabricRecipeProvider {
 			);
 	}
 
-	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Ingredient flag1, Ingredient flag2, Ingredient flag3) {
-		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
-			.input(PetworksItems.CLOTH_COLLAR)
-			.input(catalyst)
-			.input(flag1)
-			.input(flag2)
-			.input(flag3);
-	}
-	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Ingredient flag1, Ingredient flag2, Ingredient flag3, Ingredient flag4) {
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Item catalyst, Item flag1, Item flag2, Item flag3) {
 		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
 			.input(PetworksItems.CLOTH_COLLAR)
 			.input(catalyst)
 			.input(flag1)
 			.input(flag2)
 			.input(flag3)
-			.input(flag4);
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
 	}
-	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Ingredient flag1, Ingredient flag2, Ingredient flag3, Ingredient flag4, Ingredient flag5) {
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Item flag1, Item flag2, Item flag3) {
+		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+			.input(PetworksItems.CLOTH_COLLAR)
+			.input(catalyst)
+			.input(flag1)
+			.input(flag2)
+			.input(flag3)
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, TagKey<Item> catalyst, Item flag1, Item flag2, Item flag3) {
+		return createPrideCollarRecipe(output, Ingredient.fromTag(catalyst),flag1,flag2,flag3)
+			.criterion("has_materials",
+				RecipeProvider.conditionsFromItemPredicates(
+					ItemPredicate.Builder
+						.create()
+						.items(Items.STRING)
+						.tag(catalyst)
+						.build()
+				)
+			);
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Item catalyst, Item flag1, Item flag2, Item flag3, Item flag4) {
 		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
 			.input(PetworksItems.CLOTH_COLLAR)
 			.input(catalyst)
@@ -197,9 +212,9 @@ public class PetworksRecipeGenerator extends FabricRecipeProvider {
 			.input(flag2)
 			.input(flag3)
 			.input(flag4)
-			.input(flag5);
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
 	}
-	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Ingredient flag1, Ingredient flag2, Ingredient flag3, Ingredient flag4, Ingredient flag5, Ingredient flag6) {
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Item catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5) {
 		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
 			.input(PetworksItems.CLOTH_COLLAR)
 			.input(catalyst)
@@ -208,9 +223,9 @@ public class PetworksRecipeGenerator extends FabricRecipeProvider {
 			.input(flag3)
 			.input(flag4)
 			.input(flag5)
-			.input(flag6);
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
 	}
-	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Ingredient flag1, Ingredient flag2, Ingredient flag3, Ingredient flag4, Ingredient flag5, Ingredient flag6, Ingredient flag7) {
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Item catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6) {
 		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
 			.input(PetworksItems.CLOTH_COLLAR)
 			.input(catalyst)
@@ -220,24 +235,108 @@ public class PetworksRecipeGenerator extends FabricRecipeProvider {
 			.input(flag4)
 			.input(flag5)
 			.input(flag6)
-			.input(flag7);
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
 	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6) {
+		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+			.input(PetworksItems.CLOTH_COLLAR)
+			.input(catalyst)
+			.input(flag1)
+			.input(flag2)
+			.input(flag3)
+			.input(flag4)
+			.input(flag5)
+			.input(flag6)
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, TagKey<Item> catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6) {
+		return createPrideCollarRecipe(output, Ingredient.fromTag(catalyst),flag1,flag2,flag3,flag4,flag5,flag6)
+			.criterion("has_materials",
+				RecipeProvider.conditionsFromItemPredicates(
+					ItemPredicate.Builder
+						.create()
+						.items(Items.STRING)
+						.tag(catalyst)
+						.build()
+				)
+			);
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Item catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6, Item flag7) {
+		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+			.input(PetworksItems.CLOTH_COLLAR)
+			.input(catalyst)
+			.input(flag1)
+			.input(flag2)
+			.input(flag3)
+			.input(flag4)
+			.input(flag5)
+			.input(flag6)
+			.input(flag7)
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, Ingredient catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6, Item flag7) {
+		return ShapelessRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+			.input(PetworksItems.CLOTH_COLLAR)
+			.input(catalyst)
+			.input(flag1)
+			.input(flag2)
+			.input(flag3)
+			.input(flag4)
+			.input(flag5)
+			.input(flag6)
+			.input(flag7)
+			.criterion(FabricRecipeProvider.hasItem(PetworksItems.CLOTH_COLLAR), FabricRecipeProvider.conditionsFromItem(PetworksItems.CLOTH_COLLAR));
+	}
+	private CraftingRecipeJsonBuilder createPrideCollarRecipe(ItemConvertible output, TagKey<Item> catalyst, Item flag1, Item flag2, Item flag3, Item flag4, Item flag5, Item flag6,Item flag7) {
+		return createPrideCollarRecipe(output, Ingredient.fromTag(catalyst),flag1,flag2,flag3,flag4,flag5,flag6,flag7)
+			.criterion("has_materials",
+				RecipeProvider.conditionsFromItemPredicates(
+					ItemPredicate.Builder
+						.create()
+						.items(Items.STRING)
+						.tag(catalyst)
+						.build()
+				)
+			);
+	}
+	private CraftingRecipeJsonBuilder createSpecialCollarRecipe(ItemConvertible output, Ingredient input1, Ingredient input2) {
+		return ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, output)
+			.input('1', input1)
+			.input('2', input2)
+			.input('S', Items.STRING)
+			.pattern("S1 ")
+			.pattern("2 2")
+			.pattern(" 1S")
+			.showNotification(false);
+	}
+	private CraftingRecipeJsonBuilder createSpecialCollarRecipe(ItemConvertible output, Item input1, Item input2) {
+		return createSpecialCollarRecipe(output, Ingredient.ofItems(input1), Ingredient.ofItems(input2))
+			.criterion("has_materials",
+				RecipeProvider.conditionsFromItemPredicates(
+					ItemPredicate.Builder
+						.create()
+						.items(Items.STRING, input1, input2)
+						.build()
+				)
+			);
+	}
+
 	public final class Dyes {
-		public static final Ingredient RED = Items.RED_DYE;
-		public static final Ingredient ORANGE = Items.ORANGE_DYE;
-		public static final Ingredient YELLOW = Items.YELLOW_DYE;
-		public static final Ingredient GREEN = Items.GREEN_DYE;
-		public static final Ingredient LIME = Items.LIME_DYE;
-		public static final Ingredient LIGHT_BLUE = Items.LIGHT_BLUE_DYE;
-		public static final Ingredient CYAN = Items.CYAN_DYE;
-		public static final Ingredient BLUE = Items.BLUE_DYE;
-		public static final Ingredient PURPLE = Items.PURPLE_DYE;
-		public static final Ingredient MAGENTA = Items.MAGENTA_DYE;
-		public static final Ingredient PINK = Items.PINK_DYE;
-		public static final Ingredient WHITE = Items.WHITE_DYE;
-		public static final Ingredient LIGHT_GRAY = Items.LIGHT_GRAY_DYE;
-		public static final Ingredient GRAY = Items.GRAY_DYE;
-		public static final Ingredient BLACK = Items.BLACK_DYE;
-		public static final Ingredient BROWN = Items.BROWN_DYE;
+		public static final Item RED = Items.RED_DYE;
+		public static final Item ORANGE = Items.ORANGE_DYE;
+		public static final Item YELLOW = Items.YELLOW_DYE;
+		public static final Item GREEN = Items.GREEN_DYE;
+		public static final Item LIME = Items.LIME_DYE;
+		public static final Item LIGHT_BLUE = Items.LIGHT_BLUE_DYE;
+		public static final Item CYAN = Items.CYAN_DYE;
+		public static final Item BLUE = Items.BLUE_DYE;
+		public static final Item PURPLE = Items.PURPLE_DYE;
+		public static final Item MAGENTA = Items.MAGENTA_DYE;
+		public static final Item PINK = Items.PINK_DYE;
+		public static final Item WHITE = Items.WHITE_DYE;
+		public static final Item LIGHT_GRAY = Items.LIGHT_GRAY_DYE;
+		public static final Item GRAY = Items.GRAY_DYE;
+		public static final Item BLACK = Items.BLACK_DYE;
+		public static final Item BROWN = Items.BROWN_DYE;
 	}
 }
